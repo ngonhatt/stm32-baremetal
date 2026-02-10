@@ -74,6 +74,5 @@ This project is developed as a **course project**.
 ## 📂 Project Structure
 ```text
 student-attendance-system/
-├── attendance_system.ino  
-├── README.md
-
+├── attendance_system.ino   # Main ESP32 program
+├── README.md               # Project documentation
