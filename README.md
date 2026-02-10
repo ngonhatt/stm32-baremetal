@@ -63,6 +63,27 @@ This project is developed as a **course project**.
 
 ---
 
+## 🧠 What I Learned
+- Understanding the working principle of RFID-based attendance systems
+- Interfacing RFID RC522 with ESP32
+- Reading and handling UID data from RFID cards
+- Using RTC module to obtain real-time date and time
+- Displaying system information on LCD 2004 via I2C
+- Designing system logic for student attendance management
+- Structuring an embedded system project and documenting it on GitHub
+
+---
+
+## 🚀 Future Improvements
+- Add a database to store student and attendance information
+- Export attendance data to Excel or Google Sheets
+- Develop a web-based interface for attendance management
+- Add authentication and role management (admin / user)
+- Improve system reliability and error handling
+- Integrate cloud services for remote data access
+
+---
+
 ## 📂 Project Structure
 ```text
 student-attendance-system/
