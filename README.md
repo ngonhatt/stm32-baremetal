@@ -1,48 +1,52 @@
-# ⚙️ STM32 Bare-metal Projects
+# 📚 Student Attendance System using RFID
 
 ## 📌 Overview
-This repository contains bare-metal firmware projects developed for STM32
-microcontrollers without using HAL or STM32CubeIDE.
-The focus is on low-level register programming and understanding
-microcontroller hardware behavior.
+This project implements a **Student Attendance System** using RFID technology.
+Students scan their RFID cards to record attendance automatically.
+The system displays information on an LCD and stores attendance data for later processing.
+
+This project is developed as a **course project**.
 
 ---
 
-## 🔧 Hardware
-- STM32F411
-- DHT11 Temperature & Humidity Sensor
-- LCD 16x2 (I2C)
+## 🛠️ Hardware Components
+- ESP32 Development Board
+- RFID RC522 Module
+- LCD 2004 (I2C)
+- RTC DS1307
+- RFID Cards
+- Power Supply & Connecting Wires
 
 ---
 
-## ⚙️ Implemented Features
-- Clock configuration using registers
-- GPIO configuration (input/output)
-- I2C communication for LCD
-- DHT11 temperature and humidity reading
-- Displaying sensor data on LCD
+## ⚙️ System Features
+- Student identification using RFID cards
+- Automatic attendance recording
+- Real-time clock for date & time
+- Display status and information on LCD
+- Data storage for attendance tracking
+- Export attendance data (Excel / Google Sheets – future work)
 
 ---
 
-## 🛠️ Software & Tools
-- C Programming
-- arm-none-eabi-gcc
-- Makefile
-- MSYS2
-- STM32 Reference Manual & Datasheet
+## 🧠 System Architecture
+- ESP32 handles RFID scanning and logic
+- RTC provides real-time timestamp
+- LCD displays system status
+- Attendance data is stored and processed
 
 ---
 
-## 🧠 Project Structure
+## 📂 Project Structure
 ```text
-stm32-baremetal/
-├── gpio/
-├── timer/
-├── uart/
-├── uart_interrupt/
-├── spi/
-├── i2c/
-├── dma/
-├── bootloader/
-└── README.md
-
+student-attendance-system/
+├── src/
+│   ├── main.c
+│   ├── rfid.c
+│   ├── lcd.c
+│   └── rtc.c
+├── inc/
+│   ├── rfid.h
+│   ├── lcd.h
+│   └── rtc.h
+├── README.md
